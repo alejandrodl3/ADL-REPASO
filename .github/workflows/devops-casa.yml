@@ -42,7 +42,7 @@ jobs:
         with:
           context: .
           push: true 
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/repaso:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/casa:latest
 
   aws:
     name: Deploy image to aws
