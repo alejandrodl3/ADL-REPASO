@@ -59,8 +59,8 @@ jobs:
         script: |
             sleep 40
             docker stop web && docker rm web
-            docker rmi ${{ secrets.DOCKERHUB_USERNAME }}/repaso
-            docker run -d -p 80:8000 --name web ${{ secrets.DOCKERHUB_USERNAME }}/repaso
+            docker rmi ${{ secrets.DOCKERHUB_USERNAME }}/casa
+            docker run -d -p 80:8000 --name web ${{ secrets.DOCKERHUB_USERNAME }}/casa
 
   # health_check_job:
   #   runs-on: ubuntu-latest
